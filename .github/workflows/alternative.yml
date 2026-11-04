@@ -75,7 +75,7 @@ jobs:
       - name: Smoke Test Deployment
         shell: powershell
         run: |
-          $deployDir = "C:\AinaWork\htp-deployment\demo-php-github"
+          $deployDir = "C:\AinaWork\htp-deployment\demo-php-github\src"
           if (-not (Test-Path (Join-Path $deployDir "index.php"))) {
               throw "index.php missing in deployed src folder"
           }
